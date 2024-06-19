@@ -37,3 +37,15 @@ IO.puts("\none Person function")
 IO.inspect(onePersonGreetings)
 IO.puts("\ntwo Person function")
 IO.inspect(twoPersonGreetings)
+
+
+
+defmodule Greeeter do
+  def hello(%{name: person_name}) do
+    "Hello " <> person_name
+  end
+end
+
+greeeterName = Greeeter.hello(%{name: "Jane"})
+IO.puts("\nMap")
+IO.inspect(greeeterName)
